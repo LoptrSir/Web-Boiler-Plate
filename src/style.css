@@ -1,0 +1,36 @@
+/* default styling that will likely apply to most projects */
+
+:root {
+  --clr-primary: rgb(211, 149, 240);
+  --clr-light: #f4f4f4;
+  --clr-dark: #333;
+  --clr-warning: rgb(140, 11, 247);
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;  /* borders can increase the affordance of interactive elements, if you’d rather address affordance differently */
+  border: none;
+}
+
+html {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+}
+
+img {
+  display: block; /* removes the little space underneath an image */
+  max-width: 100%; /* prevents image from blowing up its container */
+}
+
+/* default set of parameters for most buttons */
+.btn {
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
